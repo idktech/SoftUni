@@ -1,10 +1,14 @@
 function matrix(num) {
-    let row = 0;
-    let column = 0;
-    for (let i = 0; i >= num; i++) {
-        row += num[i]
-    }
-    console.log(row)
-}
+  let row = "";
+  let column = "";
 
-matrix(3)
+  for (let i = 0; i < num; i++) {
+    row += num + " ";
+    for (let j = 0; j < num; j++) {
+      column += num + " ";
+    }
+    console.log(column);
+    column = "";
+  }
+}
+matrix(4);
