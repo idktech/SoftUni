@@ -37,3 +37,13 @@ function printDoubledElementsInReverse(arr) {
 // Here's an example usage of the function with the input array [10, 15, 20, 25]:
 printDoubledElementsInReverse([10, 15, 20, 25])
 // In this example, printDoubledElementsInReverse() outputs "50 30", which corresponds to the doubled elements at odd positions in the input array (15 * 2 and 25 * 2), in reverse order.
+
+// second option with .map() and .filter()
+function processOddNumbers(arr) {
+    let oddNumsArr = arr.filter((el, i) => i % 2 !== 0);
+    let doubledArr = oddNumsArr.map(x => x * 2);
+    console.log("---------------");
+    console.log(doubledArr.reverse().join(" "))
+}
+
+processOddNumbers([10, 15, 20, 25])
