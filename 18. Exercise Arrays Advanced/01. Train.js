@@ -8,7 +8,11 @@ function train(arr) {
       wagons.push(Number(command[1]));
     } else {
       let passandgers = Number(command[0]);
-      for(let currentWagon = 0; currentWagon < command[2].length; currentWagon++)
+      for (
+        let currentWagon = 0;
+        currentWagon < wagons.length;
+        currentWagon++
+      ) { }
     }
   }
 
