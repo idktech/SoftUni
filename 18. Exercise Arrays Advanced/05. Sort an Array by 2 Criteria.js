@@ -1,7 +1,17 @@
-function arrayOfStrings(){
+function arrayOfStrings(arrays) {
 
+    let sorted = arrays.sort((a, b) => {
+        if (a.length !== b.length) {
+            return a.length - b.length;
+        }
+        return a.localeCompare(b);
+    })
+
+    console.log(sorted.join("\n"));
 }
 
-arrayOfStrings(['alpha',
-'beta',
-'gamma'])
+arrayOfStrings(['Isacc',
+'Theodor',
+'Jack',
+'Harrison',
+'George'])
