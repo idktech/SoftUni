@@ -26,6 +26,6 @@ function solve(input) {
     console.log(`Time needed: ${hour}h.`);
 }
 
-solve(["5", "6", "4", "20"])
+// solve(["5", "6", "4", "20"])
 solve(["1", "2", "3", "45"])
-solve(["3", "2", "5", "40"])
+// solve(["3", "2", "5", "40"])
